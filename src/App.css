@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  
+}
+.arrow {
+  border: solid #2E5BFF;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+button{
+  border: 0;
+  background-color: #F5F5FC;
+}
+button:active,
+button:focus { 
+    -moz-outline-style: none;
+    outline: none; 
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  background-color: #F5F5FC;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header{
+  background-color: #F5F5FC;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px 10px;
+}
+.app__headerDate{
+  color: #2E5BFF;
+}
+.app__buttonClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.app__button{
+  background-color: #2E5BFF;
   color: white;
+  padding: 5px 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.meeting_sch{
+  display: flex;
+  background-color: white;
+  padding: 20px 40px;
+  margin: 10px 30px;
+  box-shadow: 5px 10px #EEEEF8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meeting_schTime{
+  background-color: white;
+  flex: 1;
+}
+.meeting_schDetails{
+  background-color: white;
+  font-size: small;
+  
+}
+.form{
+  background-color: white;
+  box-shadow: 5px 10px #EEEEF8;
+  margin: 30px 250px;
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.form__dp{
+  margin: 20px ;
+  background-color: #F5F8FF;
+  width: max-content;
+  padding: 10px 30px 20px ;
+}
+.dl{
+  margin-bottom: 10px;
+  color: rgb(185, 192, 209);
+}
+.form__tp{
+  display: flex;
+  align-items: center;
+ 
+}
+.form__tp1{
+  background-color: #F5F8FF;
+  width: max-content;
+  padding: 10px 35px 20px;
+  margin: 20px;
+}
+.ltp1{
+  margin-bottom: 10px;
+  color: rgb(185, 192, 209);
+}
+.form__tp2{
+  background-color: #F5F8FF;
+  width: max-content;
+  padding: 10px 35px 20px;
+}
+.ltp2{
+  margin-bottom: 10px;
+  color: rgb(185, 192, 209);
+}
+.form__desc{
+  margin: 20px ;
+  background-color: #F5F8FF;
+  width: max-content;
+  padding: 10px 20px 20px ;
+}
+.form__buttonClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.desc{
+  margin-bottom: 10px;
+  color: rgb(185, 192, 209);
+}
+input[type=textarea] {
+  width: 440px;
+  height: 120px;
+  background-color: #F5F8FF;
+  
+} 
+input[type=textarea]:focus {
+  background-color: white;
+}
+.form__button{
+  background-color: #2E5BFF;
+  color: white;
+  padding: 5px 25px;
+  border: 0;
+  margin-right: 40px;
+}
+.bookbtn{
+  background-color: #2E5BFF;
+  color: white;
+  padding: 5px 25px;
+  border: 0;
 }
